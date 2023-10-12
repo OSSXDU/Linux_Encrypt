@@ -42,3 +42,7 @@ LUKS 执行以下操作
 
 
 ### 参考文献
+
+[1] https://wiki.archlinux.org/title/Data-at-rest_encryption
+
+[2] https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery
