@@ -29,6 +29,8 @@ LUKS 执行以下操作
 - LUKS 增强了密码短语，防止字典攻击。
 - LUKS 设备包含多个密钥插槽，其允许用户添加备份密钥或密码短语。
 
+![img](https://img-blog.csdnimg.cn/20210709103633103.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2JlbWluZDE=,size_16,color_FFFFFF,t_70)
+
 ### 技术实现
 
 
@@ -42,3 +44,7 @@ LUKS 执行以下操作
 
 
 ### 参考文献
+
+[1] https://wiki.archlinux.org/title/Data-at-rest_encryption
+
+[2] https://gitlab.com/cryptsetup/cryptsetup/-/wikis/FrequentlyAskedQuestions#6-backup-and-data-recovery
