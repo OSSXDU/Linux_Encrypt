@@ -1,4 +1,6 @@
 # Linux文件加密技术研究与实现
+![image](https://github.com/OSSXDU/Linux_Encrypt/assets/70969752/8083a40e-9187-46a0-be44-57041af9bbaa)
+
 
 ##  使用 LUKS1 加密块设备
 
