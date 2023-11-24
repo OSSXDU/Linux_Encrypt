@@ -17,7 +17,7 @@ eCryptfs（enterprise Cryptographic Filesystem）是一个用于Linux系统的�
 
 eCryptfs常用于保护用户的个人数据，例如家目录、私密文档等。它也可以在企业环境中用于保护敏感数据，确保数据不被未授权访问。
 
-**[调研介绍](https://github.com/OSSXDU/Linux_Encrypt/blob/main/eCryptfs.md#简介)**
+**[点击查看调研介绍](https://github.com/OSSXDU/Linux_Encrypt/blob/main/eCryptfs.md#简介)**
 
 ## LUKS
 
@@ -35,7 +35,7 @@ LUKS（Linux Unified Key Setup）是一个用于Linux系统的磁盘加密规范
 
 LUKS通常用于对整个系统的磁盘进行加密，以保护所有存储在其中的数据，包括操作系统和用户文件。
 
-**[调研介绍](https://github.com/OSSXDU/Linux_Encrypt/blob/main/LUKS.md)**
+**[点击查看调研介绍](https://github.com/OSSXDU/Linux_Encrypt/blob/main/LUKS.md)**
 
 ## dm-crypt
 
@@ -53,5 +53,12 @@ dm-crypt是Linux内核的一个模块，它提供了一个通用的块设备加�
 
 dm-crypt通常用于对整个磁盘或者分区进行加密，它也可以与LUKS结合使用以提供更高级的加密功能。
 
-**[调研介绍](https://github.com/OSSXDU/Linux_Encrypt/blob/main/tracknote.md#dm-crypt)**
+**[点击查看调研介绍](https://github.com/OSSXDU/Linux_Encrypt/blob/main/tracknote.md#dm-crypt)**
 
+## Cryptomator
+
+Cryptomator是为解决在将文件保存到云存储时可能出现的隐私问题而设计的，是一款开源的，安全的，没有后门的文件加密软件，可以轻松的对文件进行加解密，并在锁定文件目录后，自动退出文件目录，不留“痕迹”。
+
+Cryptomator可以有效缓解云提供商或第三方未经许可访问云中存储的数据的风险。只有知道保险库密码的人才能读取库中的文件或在不被察觉的情况下更改文件内容。这对文件内容和文件名都是适用的。
+
+**[点击查看调研报告](https://github.com/OSSXDU/Linux_Encrypt/blob/main/Cryptomator.md)**
