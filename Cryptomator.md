@@ -415,7 +415,7 @@ if (length(ciphertextName) > 220) {
 
 抛开那些原理，Cryptomator 的工作机制其实很简单。就像之前所说，Cryptomator 会将在你选择的位置创建一个保险柜，而这个保险柜以文件夹的形式存在。
 
-在你通过 Cryptomator 解锁它之后，Cryptomator 会弹出一个虚拟的磁盘，你在虚拟磁盘里的一切写入操作都会被 Cryptomator 实时加密后放入保险柜的文件夹；相反，一切读取操作（例如打开一个文件）都是由 Cryptomator 解密后展现在虚拟的磁盘里。试试看你能在保险库文件夹里找到什么东西。
+在你通过 Cryptomator 解锁它之后，Cryptomator 会弹出一个虚拟的磁盘，你在虚拟磁盘里的一切写入操作都会被 Cryptomator 实时加密后放入保险柜的文件夹；相反，一切读取操作（例如打开一个文件）都是由 Cryptomator 解密后展现在虚拟的磁盘里。
 
 必要的元素
 
@@ -490,7 +490,7 @@ if (length(ciphertextName) > 220) {
 
 ![image-20231125000643411](./Cryptomator.assets/image-20231125000643411.png)
 
-加密前
+加密前的文件夹目录(除文件夹外不显示)
 
 ```shell
 F:\ ❯ tree F:\
@@ -515,9 +515,11 @@ F:\
             └─annotations
 ```
 
-这时候可以发现F盘无法访问
+当关闭vault之后，这时候可以发现F盘无法访问
 
 <img src="./Cryptomator.assets/image-20231125001008217.png" alt="image-20231125001008217" style="zoom:80%;" />
+
+并且在解锁或者关闭vault都无法通过访问物理文件夹来访问文件，都经过了加密，如下所示，只有通过cryptomator客户端才能够访问
 
 ```
 D:\CTF\crytotest ❯ tree test
@@ -584,6 +586,10 @@ D:\CTF\CRYTOTEST\TEST
 `masterkey.cryptomator`
 
 ![image-20231125001052918](./Cryptomator.assets/image-20231125001052918.png)
+
+你还能在cryptomator看到它读取文件的效率或者IO性能
+
+<img src="./Cryptomator.assets/image-20231125110528987.png" alt="image-20231125110528987" style="zoom:67%;" />
 
 ## 参考文献
 
