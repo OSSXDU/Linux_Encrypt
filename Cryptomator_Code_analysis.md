@@ -22,6 +22,8 @@ mvn clean install
 
 ### 保险库实现
 
+![Workflow for reading and decrypting stored data with Cryptomator](./Cryptomator_Code_analysis.assets/image-20240105101613171.png)
+
 Cryptomator使用了一个关键的类，名为`Vault`，用于实现保险库（Vault）的功能。能够实现负责管理加密文件系统的创建、操作和销毁，以及与用户界面的交互。
 
 ![image-20240106180249471](./Cryptomator_Code_analysis.assets/image-20240106180249471.png)
