@@ -150,7 +150,6 @@ eyJraWQiOiJtYXN0ZXJrZXlmaWxlOm1hc3RlcmtleS5jcnlwdG9tYXRvciIsInR5cCI6IkpXVCIsImFs
    - 最后，系统将确认文件中指定的 `format`（格式）和 `cipherCombo`（加密算法组合）是否由当前使用的 Cryptomator 软件支持。
    - 这一步骤确保了软件能够正确地处理和加解密保险库中的文件。
 
-```mermaid
 graph TD;
   A[开始] -->|解码 vault.cryptomator 而不进行验证| B;
   B[调用解码函数（不验证签名）] --> C[得到解码后的内容（Header, Payload）];
@@ -162,7 +161,6 @@ graph TD;
   H -->|确保支持 format 和 cipherCombo| I[从解码后的内容中获取 format 和 cipherCombo 值];
   I --> J[检查系统是否支持指定的 format 和 cipherCombo];
   J --> K[结束];
-```
 
 
 
